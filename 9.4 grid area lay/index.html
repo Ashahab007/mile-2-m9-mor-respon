@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: grid;
+        gap: 5px;
+        grid-template-areas:
+          "header header header header"
+          "nav main main sidebar"
+          "nav main main advertise"
+          "footer footer footer footer";
+      }
+
+      .header {
+        grid-area: header;
+      }
+
+      .nav {
+        grid-area: nav;
+      }
+
+      .main {
+        grid-area: main;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+
+      .advertise {
+        grid-area: advertise;
+      }
+
+      .box {
+        background-color: burlywood;
+      }
+    </style>
+    <title>Grid area layout</title>
+  </head>
+  <body>
+    <h1>Grid area layout</h1>
+    <div class="container">
+      <div class="box header">The Header</div>
+      <div class="box nav">
+        <ul>
+          <li><a href="">Nav1</a></li>
+          <li><a href="">Nav1</a></li>
+          <li><a href="">Nav1</a></li>
+        </ul>
+      </div>
+      <div class="box main">
+        <h1>Main article area</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex aut
+          eveniet aspernatur. Rerum repellendus, tenetur temporibus quis alias
+          deserunt vero rem vitae, aliquid deleniti iusto dolorum eligendi
+          accusamus aliquam? Corporis.
+        </p>
+      </div>
+      <div class="box sidebar">Sidebar</div>
+      <div class="box advertise">Advertising</div>
+      <div class="box footer">The footer</div>
+    </div>
+  </body>
+</html>
