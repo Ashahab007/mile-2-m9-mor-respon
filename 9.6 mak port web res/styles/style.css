@@ -259,7 +259,29 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-  .skill-container {
+  .skill-container,
+  .footer-container,
+  .resume-container {
     flex-direction: column;
+  }
+
+  .resume {
+    margin-bottom: 70px;
+  }
+
+  .resume-container {
+    padding: 30px;
+  }
+
+  .footer-container {
+    width: 90%;
+    gap: 0px;
+  }
+
+  .footer-form input,
+  .footer-form textarea {
+    width: calc(
+      100% - 20px
+    ); /*without making it responsive the width of the input and textarea box was uneven with left side & right side. To make it even with both side in responsive, as there is padding left & right from 10px + 10px i.e 20px. Using the calc function the formula is calc(percent width - total padding/ margin) */
   }
 }
