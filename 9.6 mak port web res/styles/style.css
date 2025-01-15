@@ -252,3 +252,14 @@ footer {
 .form-button-section {
   margin-top: 24px;
 }
+
+/* responsive layout */
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .skill-container {
+    flex-direction: column;
+  }
+}
