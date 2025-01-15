@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Work Sans", serif;
+  /* margin: 0;
+  padding: 0; */
+}
+
+/* header */
+
+.header {
+  background-image: url("../images/developer.png"),
+    url("../m6-web-dev-portfolio/images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-color: #fff0e4;
+}
+/* Nav styles */
+
+.nav-title {
+  font-weight: 800;
+  font-size: 45px;
+  /* border: 1px solid; */
+}
+
+.nav-title span {
+  color: rgba(253, 110, 10, 1);
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #474747;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 200px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: ;
+}
+
+.btn-primary {
+  background-color: rgba(253, 110, 10, 1);
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px 36px;
+  border-radius: 10px;
+}
+
+/* banner styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px 0 200px;
+}
+
+.banner-description {
+  max-width: 580px;
+}
+.banner-greetings {
+  font-size: 45px;
+  font-weight: 600;
+  color: #474747;
+}
+
+.banner-title {
+  font-weight: bold;
+  font-size: 85px;
+}
+
+.banner-content {
+  max-width: 585px;
+}
+
+.banner-description {
+  font-size: 18;
+  color: #757575;
+}
+
+/* Main styles */
+main {
+  max-width: 1140px; /*as per design all  the main section width is 1140px and so applied as a max-width: 1140px in main section i.e  max-width is used here because different view port with different width.*/
+  margin: 0 auto; /*as the different view port has different width so margin: 0 auto is a conventional.*/
+}
+
+main section {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+/* Designing About section */
+
+.about {
+  background-color: #fff0e4;
+  /* text-align: center; */
+  /* width: 1140px;
+  height: 550px; */
+  /* margin: 0 auto; */
+  border-radius: 5px;
+  padding: 130px 150px;
+  text-align: center;
+}
+.section-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.section-title,
+.section-desciption {
+  text-align: center;
+  padding: 0px 150px;
+  margin-bottom: 50px;
+}
+
+.about-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-description {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.item {
+  font-size: 20px;
+  color: #757575;
+}
+
+/* Designing skill section */
+.skill-container {
+  display: flex;
+  gap: 24px;
+}
+
+.skills {
+  /* text-align: center; */
+}
+
+.skill {
+  padding: 30px;
+  /* text-align: center; */
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.233);
+  border-radius: 5px;
+}
+
+/* Design resume section */
+.resume-container {
+  display: flex;
+  gap: 110px;
+}
+
+.resume-column-title {
+  font-size: 30px;
+  color: #474747;
+}
+
+.experience-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #474747;
+  /* margin-top: 100px; */
+}
+.experience-description {
+  color: #757575;
+}
+
+.experience-subtitle {
+  font-size: 20px;
+  color: #757575;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.resume hr {
+  margin: 30px 0;
+}
+
+.resume .resume-button-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* style footer section */
+
+footer {
+  background-color: #fff0e4;
+}
+
+.footer-container {
+  display: flex;
+  /* justify-content: center; */
+  gap: 80px;
+  width: 1140px;
+  margin: 0 auto;
+  /* margin-top: 500px; */
+}
+
+.footer-column h4 {
+  font-size: 35px;
+  margin-top: 100px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.footer-description {
+  color: #757575;
+}
+
+.footer-form {
+  display: block;
+  /* flex-direction: column; */
+  gap: 30px;
+}
+
+.footer-form input {
+  width: 100%;
+  height: 64px;
+  margin-bottom: 24px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border: none;
+}
+
+.footer-form textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px 10px;
+  /* padding: 5px; */
+  font-size: 20px;
+  border: none;
+}
+
+.form-button-section {
+  margin-top: 24px;
+}
