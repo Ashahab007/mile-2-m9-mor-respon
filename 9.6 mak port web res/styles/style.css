@@ -20,7 +20,6 @@
 .nav-title {
   font-weight: 800;
   font-size: 45px;
-  /* border: 1px solid; */
 }
 
 .nav-title span {
@@ -29,7 +28,7 @@
 
 nav ul li {
   list-style-type: none;
-  margin-right: 50px;
+  margin-right: 25px;
 }
 
 nav ul li a {
@@ -48,7 +47,7 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  gap: ;
+  gap: 0px;
 }
 
 .btn-primary {
@@ -106,10 +105,6 @@ main section {
 
 .about {
   background-color: #fff0e4;
-  /* text-align: center; */
-  /* width: 1140px;
-  height: 550px; */
-  /* margin: 0 auto; */
   border-radius: 5px;
   padding: 130px 150px;
   text-align: center;
@@ -145,10 +140,6 @@ main section {
 .skill-container {
   display: flex;
   gap: 24px;
-}
-
-.skills {
-  /* text-align: center; */
 }
 
 .skill {
@@ -262,8 +253,23 @@ footer {
   .skill-container,
   .footer-container,
   .resume-container,
-  .about-items {
+  .about-items,
+  .banner,
+  nav {
     flex-direction: column;
+  }
+
+  .nav-menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner {
+    margin: 0px;
+  }
+
+  .header {
+    background-image: none;
   }
 
   .about {
@@ -294,5 +300,15 @@ footer {
     width: calc(
       100% - 20px
     ); /*without making it responsive the width of the input and textarea box was uneven with left side & right side. To make it even with both side in responsive, as there is padding left & right from 10px + 10px i.e 20px. Using the calc function the formula is calc(percent width - total padding/ margin) */
+  }
+
+  .btn-primary {
+    font-size: 15px;
+    padding: 4px 10px;
+    font-weight: 500;
+  }
+
+  .nav-title {
+    margin-right: 10px;
   }
 }
