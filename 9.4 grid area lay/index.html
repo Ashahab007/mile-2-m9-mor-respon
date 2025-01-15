@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .container {
         display: grid;
-        gap: 5px;
+        gap: 15px;
         grid-template-areas:
           "header header header header"
           "nav main main sidebar"
@@ -20,6 +25,10 @@
 
       .nav {
         grid-area: nav;
+      }
+
+      .nav ul li {
+        list-style-type: none;
       }
 
       .main {
@@ -39,7 +48,39 @@
       }
 
       .box {
-        background-color: burlywood;
+        background-color: beige;
+        border: 4px solid sandybrown;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      /* Responsive Design */
+
+      @media screen and (max-width: 576px) {
+        .container {
+          grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "advertise"
+            "footer";
+        }
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 996px) {
+        .container {
+          grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "sidebar main main"
+            "sidebar main main"
+            "advertise footer footer";
+        }
+        .nav ul {
+          display: flex;
+          justify-content: space-between;
+        }
       }
     </style>
     <title>Grid area layout</title>
